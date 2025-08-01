@@ -45,7 +45,7 @@ describe('Pruebas en AddCategory', () => {
 
         expect( onNewCategory ).toHaveBeenCalledTimes(0);
 
-    })
+    });
     
     
 })
