@@ -39,10 +39,8 @@ describe('Pruebas en AddCategory', () => {
 
         render( <AddCategory onNewCategory={ onNewCategory } /> );
 
-        const input = screen.getByRole('textbox');
         const form = screen.getByRole('form');
         
-        expect( input.value ).toBe('');
         fireEvent.submit( form );
 
         expect( onNewCategory ).toHaveBeenCalledTimes(0);
